@@ -4,19 +4,24 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
   "main": "server.js",
   "scripts": {
-    "start": "concurrently \"./node_modules/.bin/nodemon run server\" \"npm run client\"",
+    "start": "concurrently \"./node_modules/.bin/nodemon server\" \"npm run client\"",
     "server": "node server.js",
     "client": "node scripts/client.js",
     "build": "cd client && npm run build",
-    "deploy": "cd client && npm run build && cd .. && git add -f client/build && git push heroku master"
+    "deploy": "npm run build && node scripts/heroku"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.17.1",
     "concurrently": "^3.4.0",
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "mysql": "^2.13.0",
+    "sequelize": "^3.30.4",
+    "sequelize-router": "^1.0.5"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "simple-git": "^1.69.0"
   }
 }
