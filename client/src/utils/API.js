@@ -8,7 +8,6 @@ export const API = {
   },
   createTodo: function(text) {
     const newTodo = { text, complete: false };
-    console.log(newTodo);
     return axios.post(BASEURL, newTodo);
   },
   toggleTodoComplete: function(todo) {
