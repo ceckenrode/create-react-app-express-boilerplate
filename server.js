@@ -3,6 +3,7 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var sequelizeRouter = require('sequelize-router');
 var db = require('./models');
+
 var PORT = process.env.PORT || 3001;
 var app = express();
 
