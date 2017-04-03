@@ -6,7 +6,7 @@
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "node server.js",
-    "client": "node start-client.js",
+    "client": "node scripts/client.js",
     "build": "cd client && npm run build",
     "deploy": "cd client && npm run build && cd .. && git add -f client/build && git push heroku master"
   },
