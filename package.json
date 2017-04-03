@@ -8,7 +8,7 @@
     "server": "node server.js",
     "client": "node scripts/client.js",
     "build": "cd client && npm run build",
-    "deploy": "cd client && npm run build && cd .. && git add -f client/build && git push heroku master"
+    "deploy": "cd client && npm run build && cd .. && git add -f client/build && git commit -m 'Building for prod' && git push heroku master"
   },
   "author": "",
   "license": "ISC",

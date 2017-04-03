@@ -20,7 +20,7 @@ app.use('/api', sequelizeRouter(db.Todo));
 
 // Anything that isn't a request for an API just gets sent to the React App
 app.get('*', function(req, res) {
-  res.sendFile(path.join(__dirname, './client/public/index.html'));
+  res.sendFile(path.join(__dirname, './client/build/index.html'));
 });
 
 db.sequelize.sync().then(function() {
