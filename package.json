@@ -4,7 +4,7 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
   "main": "server.js",
   "scripts": {
-    "start": "concurrently \"./node_modules/.bin/nodemon server\" \"npm run client\"",
+    "start": "concurrently \"./node_modules/.bin/nodemon\" \"npm run client\"",
     "server": "node server.js",
     "client": "node scripts/client.js",
     "build": "cd client && npm run build",
