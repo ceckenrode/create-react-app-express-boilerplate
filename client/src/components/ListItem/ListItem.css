@@ -1,0 +1,9 @@
+.list-group-item::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.completed {
+  text-decoration: line-through;
+}
