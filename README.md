@@ -20,7 +20,7 @@ Examples:
 
 `yarn client add axios` < - When run from the project root is equivalent to running `yarn add axios` from the client directory. So simply add `client` inbetween yarn and the rest of the command to specify the client.
 
-`yarn client add -- --dev gulp` < - The only exeption is when passing arguments into the yarn command: an additional `--` must be provided before the argument. In this case `yarn client add -- --dev gulp` is equivelent to `yarn add --dev gulp` when run from within the client directory.
+`yarn client add -- --dev gulp` < - The only exception is when passing arguments into the yarn command: an additional `--` must be provided before the argument. In this case `yarn client add -- --dev gulp` is equivalent to `yarn add --dev gulp` when run from within the client directory.
 
 To deploy to Heroku, simply run the following commands:
 
@@ -31,3 +31,5 @@ followed by:
 `npm run deploy`
 
 And that's it.
+
+The Procfile tells Heroku to run the Node server, and the deploy script ensures that the client is fully built and committed before deployment.
