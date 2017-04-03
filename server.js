@@ -12,10 +12,6 @@ app.get('*', function(req, res) {
   res.sendFile(path.join(__dirname, './client/public/index.html'));
 });
 
-app.get("/1", function(req, res) {
-  res.json("test");
-});
-
 app.listen(PORT, function() {
-  console.log('Now listening on PORT %s! Visit http://localhost:%s in your browser!', PORT, PORT);
+  console.log('🌎 ==> Now listening on PORT %s! Visit http://localhost:%s in your browser!', PORT, PORT);
 });
