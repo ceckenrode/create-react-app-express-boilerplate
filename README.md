@@ -10,6 +10,8 @@ To begin, remove the git remotes after cloning by running `rm -rf .git`.
 
 To start the application, simply run `npm start`. This will start up the Node server and React application using a WebpackDevServer. The Node server runs on PORT 3001 by default and the WebpackDevServer runs on PORT 3000. All requests from the WebpackDevServer will be proxied to port 3001.
 
+By default this boilerplate uses Nodemon to watch all JavaScript on the server and restart the server as any of the backend JavaScript or JSON changes.
+
 ### Managing Front-End Dependencies
 
 One option for managing front-end dependencies would be to cd into the client folder from the project root and install all dependencies from there.
