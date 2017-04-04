@@ -16,7 +16,7 @@ By default this boilerplate uses Nodemon to watch all JavaScript on the server a
 
 One option for managing front-end dependencies would be to cd into the client folder from the project root and install all dependencies from there.
 
-Another option provided if you don't want to cd back and forth between the client and server would be to run all commands from the project root using `yarn client -- <args>`.
+An alternative option provided if you don't want to cd back and forth between the client and server would be to run all commands from the project root using `yarn client -- <args>`.
 
 Examples:
 
@@ -30,7 +30,11 @@ To deploy to Heroku, simply run the following commands:
 
 followed by:
 
-`npm run deploy`
+`npm run deploy` 
+
+Essentially this script builds the front end project, adds and commits the build, and pushes the master branch to heroku.
+
+Alternatively, you could just cd into the client folder and do that yourself. No really difference, just fewer keystrokes.
 
 And that's it.
 
