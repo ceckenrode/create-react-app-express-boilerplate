@@ -8,8 +8,7 @@
     "react-dom": "^15.4.2"
   },
   "devDependencies": {
-    "react-scripts": "0.9.5",
-    "concurrently": "3.4.0"
+    "react-scripts": "0.9.5"
   },
   "scripts": {
     "start": "react-scripts start",
